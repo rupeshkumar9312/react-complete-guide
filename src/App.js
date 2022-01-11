@@ -2,6 +2,9 @@ import './App.css';
 import './components/ExpenseItem'
 import './components/Expenses'
 import Expenses from './components/Expenses';
+import ExpenseForm from './components/NewExpense/ExpenseForm';
+import NewExpense from './components/NewExpense/NewExpense';
+
 
 function App() {
 
@@ -29,6 +32,7 @@ function App() {
 
   return (
     <div>
+      <NewExpense />
       <Expenses expenses={expenses} />
     </div>
 
